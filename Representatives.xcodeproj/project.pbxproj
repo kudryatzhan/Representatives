@@ -12,6 +12,8 @@
 		B2EFBC061FCCB4E200C89C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EFBC041FCCB4E200C89C60 /* Main.storyboard */; };
 		B2EFBC081FCCB4E200C89C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EFBC071FCCB4E200C89C60 /* Assets.xcassets */; };
 		B2EFBC0B1FCCB4E200C89C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EFBC091FCCB4E200C89C60 /* LaunchScreen.storyboard */; };
+		B2EFBC141FCCB51900C89C60 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFBC131FCCB51900C89C60 /* Representative.swift */; };
+		B2EFBC181FCCB7D600C89C60 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EFBC171FCCB7D600C89C60 /* RepresentativeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B2EFBC071FCCB4E200C89C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2EFBC0A1FCCB4E200C89C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2EFBC0C1FCCB4E200C89C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2EFBC131FCCB51900C89C60 /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		B2EFBC171FCCB7D600C89C60 /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				B2EFBC001FCCB4E200C89C60 /* AppDelegate.swift */,
-				B2EFBC021FCCB4E200C89C60 /* ViewController.swift */,
-				B2EFBC041FCCB4E200C89C60 /* Main.storyboard */,
+				B2EFBC151FCCB51D00C89C60 /* Model */,
+				B2EFBC161FCCB52700C89C60 /* UI */,
+				B2EFBC121FCCB4E900C89C60 /* Resources */,
+			);
+			path = Representatives;
+			sourceTree = "<group>";
+		};
+		B2EFBC121FCCB4E900C89C60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B2EFBC071FCCB4E200C89C60 /* Assets.xcassets */,
 				B2EFBC091FCCB4E200C89C60 /* LaunchScreen.storyboard */,
 				B2EFBC0C1FCCB4E200C89C60 /* Info.plist */,
 			);
-			path = Representatives;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2EFBC151FCCB51D00C89C60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2EFBC131FCCB51900C89C60 /* Representative.swift */,
+				B2EFBC171FCCB7D600C89C60 /* RepresentativeController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2EFBC161FCCB52700C89C60 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B2EFBC021FCCB4E200C89C60 /* ViewController.swift */,
+				B2EFBC041FCCB4E200C89C60 /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,8 @@
 			files = (
 				B2EFBC031FCCB4E200C89C60 /* ViewController.swift in Sources */,
 				B2EFBC011FCCB4E200C89C60 /* AppDelegate.swift in Sources */,
+				B2EFBC181FCCB7D600C89C60 /* RepresentativeController.swift in Sources */,
+				B2EFBC141FCCB51900C89C60 /* Representative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7U33G44V;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Representatives;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7U33G44V;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Representatives;
 				PRODUCT_NAME = "$(TARGET_NAME)";
